@@ -1,0 +1,424 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+ font-family:'Rubik', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header{
+  background-color: #F5F9FC;
+  height: 4rem;
+}
+
+header nav{
+  width: 96%;
+  height: 4rem;
+  margin: auto;
+}
+
+header nav > *{
+  width: 28%;
+  float: left;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+header nav #logo{
+  font-weight: 600;
+  color: #2C3844;
+}
+
+header nav ul, footer .footer-bottom-section ul{
+  padding-left: 0;
+  width: 52%;
+  height: 2.4rem;
+  padding-top: 0.6rem;
+}
+
+header nav ul li, footer .footer-bottom-section ul li{
+  list-style: none;
+  float: left;
+  margin-right: 15%;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #434c54d5;
+}
+
+header nav > a{
+  width: fit-content;
+  float: right;
+  text-decoration: none;
+  background-color: #2C3844;
+  color: white;
+  padding: 0.6rem 1.5rem;
+}
+
+main, .middle-section{
+  width: 100%;
+  height: 64rem;
+  background-color: #F5F9FC;
+}
+
+main .landing{
+  width: 93%;
+  height: 40rem;
+  margin-left: 7%;
+}
+
+main .landing .landing-left{
+  width: 45%;
+  height: 40rem;
+  float: left;
+  padding: 6rem 0;
+  padding-right: 12rem;
+}
+
+main .landing .landing-left span, .middle-section .middle-section-bottom .middle-section-bottom-right span{
+  color: #788692;
+}
+
+main .landing .landing-left h1, .middle-section .middle-section-bottom .middle-section-bottom-right h1{
+  font-size: 2.9rem;
+  font-weight: 600;
+  color: #2C3844;
+}
+
+main .landing .landing-left input{
+  width: 70%;
+  height: 2.5rem;
+  border: none;
+  padding: 0;
+  padding-left: 1rem;
+  background-color: #bbc5cfaf;
+}
+
+main .landing .landing-left a{
+  width: fit-content;
+  text-decoration: none;
+  background-color: #2C3844;
+  color: white;
+  padding: 0.63rem 1.5rem;
+}
+
+main .landing .landing-left p, .middle-section .middle-section-bottom .middle-section-bottom-right p{
+  color: #434c54d5;
+}
+
+main .landing .landing-right{
+  width: 55%;
+  height: 40rem;
+  float: right;
+}
+
+main .landing .landing-right img{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+main .features, .middle-section .middle-section-top, footer .footer-top-section{
+  width: 86%;
+  height: 25rem;
+  margin: 0 7%;
+}
+
+main .features section, footer .footer-top-section section{
+  width: 25%;
+  height: 25rem;
+  float: left;
+  padding: 5rem  0;
+  padding-right: 2rem;
+}
+
+main .features section h2{
+  color: #2C3844;
+  font-weight: 600;
+}
+
+main .features section p{
+  color: #434c54d5;
+}
+
+main .features section div{
+  margin-top: 1.8rem;
+}
+
+main .features section a{
+  text-decoration: none;
+  color: #2C3844;
+  font-weight: 500;
+}
+
+main .features section div img{
+  width: 3.5%;
+}
+
+.middle-section {
+  background-color: #FFFFFF;
+}
+
+.middle-section .middle-section-top{
+  padding: 4rem 0;
+  text-align: center;
+  height: 20rem;
+}
+
+.middle-section .middle-section-top h2{
+  font-size: 3rem;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
+  color: #2C3844;
+}
+
+.middle-section .middle-section-top p{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.middle-section .middle-section-bottom{
+  width: 95%;
+  height: 35rem;
+  margin: 0 2.2%;
+}
+
+.middle-section .middle-section-bottom .middle-section-bottom-left{
+  width: 45%;
+  height: 35rem;
+  float: left;
+  padding-top: 6rem;
+}
+
+.middle-section .middle-section-bottom .middle-section-bottom-right{
+  width: 48%;
+  height: 35rem;
+  float: right;
+  margin-right: 2%;
+  padding: 8rem;
+}
+
+.middle-section .middle-section-bottom .middle-section-bottom-right section{
+  width: 100%;
+  height: 8rem;
+  margin-top: 2rem;
+}
+
+.middle-section .middle-section-bottom .middle-section-bottom-right section h3{
+  width: 33.33%;
+  padding-left: 1%;
+  float: left;
+  font-size: 0.9rem;
+  color: #2C3844;
+}
+
+footer {
+  width: 100%;
+  height: 35rem;
+  background-color: #2C3844;
+}
+
+/* footer .footer-top-section{
+  width: 86%;
+  height: 20rem;
+  margin: 0 7%;
+  border: 1px solid red;
+}
+
+/* footer .footer-top-section section{
+  width: 25%;
+  height: 20rem;
+  float: left;
+  border: 1px solid red;
+} */ 
+
+footer .footer-top-section section h4{
+  color: #fffffff5;
+}
+
+footer .footer-top-section section ul{
+  padding-left: 0;
+}
+
+footer .footer-top-section section ul li{
+  list-style: none;
+  margin-bottom: 0.8rem;
+}
+
+footer .footer-top-section section a{
+  text-decoration: none;
+  
+  color:#788692;
+}
+
+footer .footer-bottom-section{
+  width: 100%;
+  height: 10rem;
+}
+
+footer .footer-bottom-section ul{
+  width: fit-content;
+  height: 3rem;
+  margin: auto;
+}
+
+footer .footer-bottom-section ul li{
+  margin: 0;
+  padding: 0.5rem 1rem;
+  float: left;
+}
+
+footer .footer-bottom-section ul + ul li a{
+  color: #e5ebf077;
+  text-decoration: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 480px){
+
+  header nav{
+    width: 95%;
+    margin: auto;
+  }
+
+  header nav ul{
+    display: none;
+  }
+
+  main{
+    height: 130rem;
+    width: 100%;
+  }
+
+  main .landing, .middle-section .middle-section-top{
+    height: 55rem;
+    width: 95%;
+    margin: auto;
+  }
+
+  main .landing .landing-left{
+    width: 100%;
+    padding: 3rem 0;
+    padding-right: 0.5rem;
+    height: 35rem;
+  }
+
+  main .landing .landing-left input, main .landing .landing-left a{
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  main .landing .landing-left a{
+    text-align: center;
+  }
+
+  main .landing .landing-right{
+    width: 100%;
+    height: 20rem;
+  }
+
+  main .landing .landing-right img{
+    width: 100%;
+  }
+
+  main .features{
+    width: 100%;
+    margin: 0;
+    height: 72rem;
+  }
+
+  main .features section{
+    width: 100%;
+    padding: 2rem;
+    height: 18rem;
+  }
+
+  .middle-section{
+    width: 95%;
+    height: 80rem;
+    margin: auto;
+  }
+
+  .middle-section .middle-section-top{
+    width: 100%;
+    height: 30rem;
+    text-align: left;
+    padding: 2rem 0;
+  }
+
+  .middle-section .middle-section-top h2{
+    width: 100%;
+  }
+
+  .middle-section .middle-section-top p{
+    width: 100%;
+    text-align: left;
+  }
+
+  .middle-section .middle-section-bottom{
+    height: 48rem;
+  }
+
+  .middle-section .middle-section-bottom .middle-section-bottom-left{
+    width: 100%;
+    padding: 0;
+    height: 16rem;
+  }
+
+  .middle-section .middle-section-bottom .middle-section-bottom-left img{
+    width: 100%;
+    margin: 0;
+  }
+
+  .middle-section .middle-section-bottom .middle-section-bottom-right{
+    width: 100%;
+    height: 32rem;
+    padding: 0;
+    
+  }
+
+  .middle-section .middle-section-bottom .middle-section-bottom-right section h3{
+    width: 100%;
+  }
+
+  footer, footer .footer-bottom-section{
+    height: 8rem;
+  }
+
+  footer .footer-top-section{
+    display: none;
+  }
+
+  footer .footer-bottom-section ul + ul li a{
+    font-size: 0.9rem;
+  }
+
+}
